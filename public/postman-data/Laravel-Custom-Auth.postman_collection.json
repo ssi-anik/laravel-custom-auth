@@ -1,0 +1,894 @@
+{
+	"id": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+	"name": "Laravel-Custom-Auth",
+	"description": "",
+	"order": [
+		"8425f7e0-eb0f-801a-4cd0-7d94ebdcbdf7",
+		"60fb57ee-0dc4-b2b1-3808-b5ec9d18d534",
+		"e31bb896-d763-db4a-7fb1-dc7b059110d3",
+		"1fc4c210-f2c5-2152-95f7-3533ff54fb9f",
+		"3f3a393f-c426-ba4d-798c-a9e399a00dd4",
+		"2653be3a-5a72-bb39-ef07-4f14402ed229",
+		"4d734889-abd4-ad86-8102-2c36ec873db4",
+		"b23f506c-0343-aecf-ac1b-6b6454159132",
+		"d819164d-f184-be4c-5a95-1e1175695354",
+		"5fae024a-1229-8681-464e-f74b193b5cf4",
+		"05b59546-2314-9c7d-f234-17224e46729e",
+		"d9741b91-154d-a261-3d98-453c25cf4485",
+		"650ff4cb-d065-1783-8859-fa8168f3d031",
+		"1bd352ac-520e-1079-904d-0cc1cf9b4882",
+		"3ecba00d-840d-7b5a-d5a0-988fb504384d",
+		"628bf99e-54eb-ea1f-d922-07041b0eaacd",
+		"d1bca401-d19a-5dfb-837d-8ff36836765a",
+		"c43ab17e-2987-4318-9ac5-fc99fb8c08fc"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1506372364867,
+	"owner": "788082",
+	"public": false,
+	"requests": [
+		{
+			"id": "05b59546-2314-9c7d-f234-17224e46729e",
+			"headers": "Accept: application/json\nAuthorization: Bearer {{access_token}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{access_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/token/auth-login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "{{email}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{password}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506375144016,
+			"name": "Auth TOKEN login",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": []
+		},
+		{
+			"id": "1bd352ac-520e-1079-904d-0cc1cf9b4882",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/api/auth-login-using-id",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "{{email}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{password}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506376280540,
+			"name": "Auth API login using id",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "bf94d0a0-2226-d174-2fd7-d458bfea826d"
+		},
+		{
+			"id": "1fc4c210-f2c5-2152-95f7-3533ff54fb9f",
+			"headers": "Accept: application/json\nAuthorization: Bearer {{api_token}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{api_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/api/auth-user",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506376449319,
+			"name": "Auth API user",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "130f0547-2a51-9342-538c-f05a5c959671"
+		},
+		{
+			"id": "2653be3a-5a72-bb39-ef07-4f14402ed229",
+			"headers": "Accept: application/json\nAuthorization: Bearer {{api_token}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{api_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/api/auth-id",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506376454861,
+			"name": "Auth API id",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": []
+		},
+		{
+			"id": "3ecba00d-840d-7b5a-d5a0-988fb504384d",
+			"headers": "Accept: application/json\nAuthorization: Bearer {{access_token}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{access_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/token/auth-logout",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506376616428,
+			"name": "Auth TOKEN logout",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": []
+		},
+		{
+			"id": "3f3a393f-c426-ba4d-798c-a9e399a00dd4",
+			"headers": "Accept: application/json\nAuthorization: Bearer {{access_token}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{access_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/token/auth-id",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506375640180,
+			"name": "Auth TOKEN id",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": []
+		},
+		{
+			"id": "4d734889-abd4-ad86-8102-2c36ec873db4",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/token/auth-attempt",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "{{email}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{password}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506374782971,
+			"name": "Auth TOKEN attempt",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": []
+		},
+		{
+			"id": "5fae024a-1229-8681-464e-f74b193b5cf4",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/api/auth-once",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "{{email}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{password}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506376271499,
+			"name": "Auth API Once",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "12ef01d0-eb9e-1b9c-97b2-53e977168293"
+		},
+		{
+			"id": "60fb57ee-0dc4-b2b1-3808-b5ec9d18d534",
+			"headers": "Accept: application/json\nAuthorization: Bearer {{api_token}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{api_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/api/auth-check",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506376444966,
+			"name": "Auth API check",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "7f9c0ff3-3e1c-e52c-0924-f12300e6eb3d"
+		},
+		{
+			"id": "628bf99e-54eb-ea1f-d922-07041b0eaacd",
+			"headers": "Accept: application/json\nAuthorization: Bearer {{api_token}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{api_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/api/auth-logout",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506376602341,
+			"name": "Auth API logout",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": []
+		},
+		{
+			"id": "650ff4cb-d065-1783-8859-fa8168f3d031",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/token/auth-login-using-id",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "{{email}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{password}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506375664227,
+			"name": "Auth TOKEN login using id",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": []
+		},
+		{
+			"id": "8425f7e0-eb0f-801a-4cd0-7d94ebdcbdf7",
+			"headers": "Accept: application/json\nAuthorization: Bearer {{access_token}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{access_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/token/auth-check",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506376631116,
+			"name": "Auth TOKEN check",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": []
+		},
+		{
+			"id": "b23f506c-0343-aecf-ac1b-6b6454159132",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/api/auth-attempt",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "{{email}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{password}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506376268915,
+			"name": "Auth API attempt",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "eee2fccf-5772-ab4a-a854-e7da4f742888"
+		},
+		{
+			"id": "c43ab17e-2987-4318-9ac5-fc99fb8c08fc",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/api/auth-validate",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "{{email}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{password}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506376286611,
+			"name": "Auth API validate",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "55a0ded4-ce05-8101-81ef-80bf681f24ba"
+		},
+		{
+			"id": "d1bca401-d19a-5dfb-837d-8ff36836765a",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/token/auth-validate",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "{{email}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{password}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506375692156,
+			"name": "Auth TOKEN validate",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": []
+		},
+		{
+			"id": "d819164d-f184-be4c-5a95-1e1175695354",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/token/auth-once",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "{{email}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{password}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506374971271,
+			"name": "Auth TOKEN Once",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": []
+		},
+		{
+			"id": "d9741b91-154d-a261-3d98-453c25cf4485",
+			"headers": "Accept: application/json\nAuthorization: Bearer {{api_token}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{api_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/api/auth-login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "{{email}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{password}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506376470532,
+			"name": "Auth API login",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "b4b179cc-bd29-a644-2e6f-91730dd30c2c"
+		},
+		{
+			"id": "e31bb896-d763-db4a-7fb1-dc7b059110d3",
+			"headers": "Accept: application/json\nAuthorization: Bearer {{access_token}}\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer {{access_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/token/auth-user",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "{{user_id}}",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506375342704,
+			"name": "Auth TOKEN user",
+			"description": "",
+			"collectionId": "ea1ae217-5f1f-8fd6-012c-d099db7cd332",
+			"responses": []
+		}
+	]
+}
