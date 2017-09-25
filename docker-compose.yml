@@ -1,0 +1,35 @@
+version: '2'
+
+services:
+    nginx:
+        image: nginx:1.13.5
+        volumes:
+            - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+        volumes_from:
+            - php
+
+    php:
+        build: ./docker/php/
+        expose:
+            - 9000
+        volumes:
+            - .:/var/www/html
+        links:
+            - mysql
+
+    mysql:
+        image: mysql:latest
+        ports:
+            - 33069:3306
+        volumes:
+            - ~/.backup/mysql/laravel-custom-auth:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: secret
+            MYSQL_DATABASE: laravel-custom-auth
+
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        links:
+            - mysql
+        environment:
+            PMA_HOST: mysql
