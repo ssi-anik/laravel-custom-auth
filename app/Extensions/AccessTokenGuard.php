@@ -39,20 +39,6 @@ class AccessTokenGuard implements Guard
 		return $this->user = $user;
 	}
 
-	public function getUserAuthCredentialFormRequest () {
-		$credentials = [];
-		// can be anything you want to get - email/phone/username - UP TO YOU.
-		if ($this->request->has('email')) {
-			$credentials ['email'] = $this->request->get('email');
-		}
-
-		if ($this->request->has('password')) {
-			$credentials ['password'] = $this->request->get('password');
-		}
-
-		return $credentials;
-	}
-
 	/**
 	 * Get the token for the current request.
 	 * @return string
